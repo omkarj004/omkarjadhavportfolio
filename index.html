@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/7ce5f05a23.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div id="header">
+
+        <div class="container">
+            <nav>
+                <img src="logo.png" class="logo" />
+                <ul id="sidemenu">
+                    <li><a href="#header" class="nav-btn">Home</a></li>
+                    <li><a href="#about" class="nav-btn">About </a></li>
+                    <li><a href="#portfolio" class="nav-btn">services </a></li>
+                    <li><a href="#contact" class="nav-btn">contact </a></li>
+                    <i class="fa-solid fa-xmark hambtn" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars hambtn" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>FullStack Developer</p>
+                <h1>Hi, I'm <span>Omkar</span> Jadhav </h1>
+            </div>
+        </div>
+
+    </div>
+    <!-------------------------- About Section ------------------------------------->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="userpp.jpg" />
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Aspiring Computer Science student | Proficient in C, Python, , JavaScript, HTML, CSS, SQL
+
+                        Currently pursuing a Bachelors of computer science at SRTM University, I have a solid foundation in computer science and engineering. My hands-on experience with various projects has honed my problem-solving skills and analytical thinking. I am passionate about web development and continuously expanding my skill set in front-end and back-end technologies.
+                        <br/>
+                        <b>Key Skills:</b>
+                        <br/>
+                        Programming Languages: C, Python, JavaScript, HTML, CSS, SQL    <br/>
+                        Web Development: HTML, CSS, JavaScript.<br/> 
+                        Problem-Solving: Strong analytical thinking and data structures proficiency<br/>
+                        Actively seeking internships or Job to further develop my skills and contribute to innovative projects.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links" onclick="opentab('Experince')">Experince</p>
+                        <p class="tab-links" onclick="opentab('Eduction')">Eduction</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>HTML</span><br /></li>
+                            <li><span>CSS</span><br /></li>
+                            <li><span>Python</span><br /></li>
+                            <li><span>Javascript</span><br /></li>
+                        </ul>
+                    </div>
+
+                    <div class="tab-contents" id="Experince">
+                        <ul>
+                            <li><span>python intern at next24tech</span><br />2 months </li>
+                            <!-- <li><span>CSS</span><br />Javascript</li>
+                            <li><span>Python</span><br />Javascript</li> -->
+                        </ul>
+                    </div>
+
+
+                    <div class="tab-contents" id="Eduction">
+                        <ul>
+                            <li><span>Bachelor's of computer science</span><br />COCSIT ,Latur
+                                <br/>
+                                SRTMU,Nanded University, Maharashtra
+                               
+                            <br/>
+                        2022-2025</li>
+                            <!-- <li><span>CSS</span><br />Javascript</li>
+                            <li><span>Python</span><br />Javascript</li> -->
+                        </ul>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!------------------------------------------------ Services----------------------------------------------------------------------------- -->
+
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">Services</h1>
+
+            <div class="services-list">
+                <div>
+
+                    <h2>Web Design</h2>
+                    <p>Transform your web design process with our innovative Web Designing App. This tool is crafted to
+                        streamline the creation of stunning, responsive websites with ease.<br />
+                        Its user-friendly interface and powerful features make it an essential tool for creating
+                        beautiful, functional websites.
+                    </p>
+                    <!-- <a href="#"> Learn more..</a> -->
+                </div>
+                <div>
+                    <h2>Web Application</h2>
+                    <p><b>User-Friendly Interfaces:</b> Designed with a focus on usability and aesthetics, ensuring an
+                        intuitive user experience.
+                        <br />
+                        <b>Responsive Design:</b> Optimized for all devices, providing a seamless experience on
+                        desktops,
+                        tablets, and smartphones.
+                        <br />
+                        <b> API Integration:</b> Leveraging third-party APIs to enhance functionality and provide
+                        additional features.
+                    </p>
+                    <!-- <a href="#"> Learn more..</a> -->
+                </div>
+                <!-- <div>
+                    <h2>Python develpment</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, ratione dolores! Quis nesciunt a
+                        fuga
+                        nobis aspernatur sint magnam officia, obcaecati sed ullam repudiandae perferendis deleniti?
+                        Distinctio animi tempora pariatur.</p>
+                    <a href="#"> Learn more..</a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <!---------------------------- portfolio/my work--------------------------------- -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="work.jpg" alt="work-image" />
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>description of work or projects</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+
+                <div class="work">
+                    <img src="work.jpg" alt="work-image2" />
+                    <div class="layer">
+                        <h3>Weather Forcasting</h3>
+                        <p>Real-Time Weather Data: Get current weather conditions, including temperature, humidity, wind
+                            speed, and more.</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="work.jpg" alt="work-image3" />
+                    <div class="layer">
+                        <h3>Social media app</h3>
+                        <p>description of work or projects</p>
+                        <a href="#"><i class="fa-solid fa-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See more</a>
+        </div>
+    </div>
+
+
+    <!-- -------------------contact--------------------------------------- -->
+
+    <div id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="conatct-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>omkarjadhav8510@gmail.com</p>
+                    <p><i class="fa-solid fa-phone"></i>8983553001</p>
+                    <div class="social-icon">
+                        <a href="https://www.linkedin.com/in/omkar-jadhav-1947912b2"><i
+                                class="fa-brands fa-linkedin"></i></a>
+                        <a href=""><i class="fa-brands fa-instagram"></i></a>
+                        <a href=""><i class="fa-brands fa-facebook"></i></a>
+                        <!-- <a href=""><i class="fa-brands fa-linkedin"></i></a> -->
+                    </div>
+                    <a href="Omkar Jadhav.pdf" download class="btn btn2"> Download CV</a>
+                </div>
+                <div class="conatct-right">
+                    <form class="submit-to-google-sheet">
+                        <input type="text" name="name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="your E-mail" required>
+                        <textarea name="message" rows="6" placeholder="Your message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+        <div class="copyright">
+            <p>
+                Copyright @ .Made by <i class="fa-solid fa-copyright"></i>
+            </p>
+        </div>
+
+    </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    <!-------------------------------------------- about javascript----------------------------------------------------------------------- -->
+    <script type="text/Javascript">
+    var tablinks=document.getElementsByClassName("tab-links");
+    var tabcontents=document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+    for(tablink of tablinks){
+        tablink.classList.remove("active-link")
+    }
+    for(tabcontent of tabcontents){
+        tabcontent.classList.remove("active-tab")
+    }
+    event.currentTarget.classList.add("active-link");
+   document.getElementById(tabname).classList.add("active-tab");
+    }
+    //<<<<< ----------------------------------------------------------------------------------------------------------------------------------->>>>>>>
+    </script>
+
+    <!-- -----------------------menubar--------------------- -->
+
+
+    <script>
+        var slidemenu = document.getElementById("sidemenu");
+        function openmenu() {
+            slidemenu.style.right = "0";
+        }
+
+        function closemenu() {
+            slidemenu.style.right = "-200px";
+        }
+
+    </script>
+
+
+    <script>
+        const scriptURL = '<https://script.google.com/macros/s/AKfycbwoiTNHIOJfovFZ3pt4N_G94a0R0Igapbywq6Er2Hn5xTrrDa_5qZMiSsjEbrj6kfvQ/exec>'
+        const form = document.forms['submit-to-google-sheet']
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, { method: 'POST', body: new FormData(form) })
+                .then(response => console.log('Success!', response))
+                .catch(error => console.error('Error!', error.message))
+        })
+    </script>
+</body>
+
+</html>
